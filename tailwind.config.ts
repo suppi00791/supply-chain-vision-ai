@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,36 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// UISCM custom colors
+				'uiscm-blue': {
+					50: '#E6F0F5',
+					100: '#CCE0EB',
+					200: '#99C1D6',
+					300: '#66A3C2',
+					400: '#3384AD',
+					500: '#006599',
+					600: '#00517A',
+					700: '#003D5C',
+					800: '#00283D',
+					900: '#00141F',
+				},
+				'uiscm-teal': {
+					50: '#E6F5F5',
+					100: '#CCEBEB',
+					200: '#99D6D6',
+					300: '#66C2C2',
+					400: '#33ADAD',
+					500: '#009999',
+					600: '#007A7A',
+					700: '#005C5C',
+					800: '#003D3D',
+					900: '#001F1F',
+				},
+				'uiscm-success': '#10B981',
+				'uiscm-warning': '#F59E0B',
+				'uiscm-error': '#EF4444',
+				'uiscm-info': '#3B82F6',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +114,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-opacity': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' },
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-opacity': 'pulse-opacity 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
 			}
 		}
 	},
